@@ -1,0 +1,112 @@
+
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #6b5b95;
+  --accent-color: #88b04b;
+  --bg-gradient: linear-gradient(135deg, #ff6f61, #f7cac9);
+  --modal-bg: #fff;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+#inicio {
+  padding: 80px 15px 40px;
+  background: #fff;
+  border-bottom: 5px solid var(--primary-color);
+}
+#inicio h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+#inicio p {
+  font-size: 1.2rem;
+}
+
+#categorias {
+  padding: 40px 15px;
+}
+#searchInput {
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  background: #fff;
+  padding: 20px;
+  object-fit: contain;
+  height: 220px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.card-text {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.modal-custom {
+  border-radius: 15px;
+}
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+}
+.modal-footer button {
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  #inicio h1 {
+    font-size: 2.5rem;
+  }
+  .nav-link {
+    margin: 0 8px;
+  }
+}
